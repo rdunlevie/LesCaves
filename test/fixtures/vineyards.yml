@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vineyard_id: 1
+  name: MyString
+  has_sub_vineyard: false
+
+two:
+  vineyard_id: 1
+  name: MyString
+  has_sub_vineyard: false

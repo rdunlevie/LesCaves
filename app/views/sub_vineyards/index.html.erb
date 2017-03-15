@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sub Vineyards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub vineyard</th>
+      <th>Vineyard</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sub_vineyards.each do |sub_vineyard| %>
+      <tr>
+        <td><%= sub_vineyard.sub_vineyard_id %></td>
+        <td><%= sub_vineyard.vineyard_id %></td>
+        <td><%= sub_vineyard.name %></td>
+        <td><%= link_to 'Show', sub_vineyard %></td>
+        <td><%= link_to 'Edit', edit_sub_vineyard_path(sub_vineyard) %></td>
+        <td><%= link_to 'Destroy', sub_vineyard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sub Vineyard', new_sub_vineyard_path %>

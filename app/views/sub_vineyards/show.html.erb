@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sub vineyard:</strong>
+  <%= @sub_vineyard.sub_vineyard_id %>
+</p>
+
+<p>
+  <strong>Vineyard:</strong>
+  <%= @sub_vineyard.vineyard_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sub_vineyard.name %>
+</p>
+
+<%= link_to 'Edit', edit_sub_vineyard_path(@sub_vineyard) %> |
+<%= link_to 'Back', sub_vineyards_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wine_id: 1
+  year: 1
+  vineyard_id: 1
+  varietal_id: 1
+
+two:
+  wine_id: 1
+  year: 1
+  vineyard_id: 1
+  varietal_id: 1

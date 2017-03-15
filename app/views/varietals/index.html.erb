@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Varietals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Varietal</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @varietals.each do |varietal| %>
+      <tr>
+        <td><%= varietal.varietal_id %></td>
+        <td><%= varietal.name %></td>
+        <td><%= link_to 'Show', varietal %></td>
+        <td><%= link_to 'Edit', edit_varietal_path(varietal) %></td>
+        <td><%= link_to 'Destroy', varietal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Varietal', new_varietal_path %>

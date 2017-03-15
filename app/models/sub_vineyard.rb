@@ -1,0 +1,2 @@
+class SubVineyard < ApplicationRecord
+end
